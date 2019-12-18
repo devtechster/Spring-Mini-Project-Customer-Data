@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="addressId" class="customer.Address" scope="prototype"></bean>
+	
+	<bean id="customerId" class="customer.Customer" autowire="byType" scope="prototype"></bean>
+	
+	<bean id="customerDAOId" class="customer.CustomerDAO"></bean>
+	
+	
+</beans>
